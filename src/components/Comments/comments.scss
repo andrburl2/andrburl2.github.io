@@ -1,0 +1,56 @@
+.comments {
+    width: 100%;
+    margin: 100px auto 0;
+}
+
+.comments__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments__item {
+    max-width: 382px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comments__image {
+    width: 100px;
+    height: 100px;
+}
+
+.comments__quote {
+    max-width: 100%;
+    margin: 42px 0 24px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .comments__quote {
+        order: 2;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 0;
+    }
+}
+
+.comments__quote-author {
+    width: 100%;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .comments__quote-author {
+        order: 1;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin: 0 0 24px;
+    }
+}
