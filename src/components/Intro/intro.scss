@@ -1,54 +1,43 @@
 .intro {
-  max-width: 985px;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 80px auto 0;
 }
 
 .intro__title {
-  max-width: 683px;
-  margin: 0 0 45px;
-  font-weight: 900;
-  font-size: 54px;
-  line-height: 59px;
+  margin: 0 0 30px;
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 6rem;
+}
+
+.intro__text {
+  max-width: 700px;
+  margin: 0 0 25px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.intro__statistics {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 @media screen and (max-width: 425px) {
   .intro__title {
-      font-size: 32px;
-      line-height: 35px;
-      margin: 0 0 32px;
+    font-size: 3rem;
+    line-height: 4rem;
   }
-}
 
-.intro__text {
-  max-width: 683px;
-  margin: 0 0 24px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-@media screen and (max-width: 425px) {
   .intro__text {
-      font-size: 16px;
-      line-height: 27px;
-      margin: 0 0 32px;
+    font-size: 16px;
+    line-height: 27px;
+    margin: 0 0 32px;
   }
-}
 
-.intro__statistics {
-  max-width: 383px;
-  margin: 0;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 20px;
-}
-
-@media screen and (max-width: 425px) {
   .intro__statistics {
-      font-size: 12px;
-      line-height: 19px;
+    font-size: 12px;
+    line-height: 19px;
   }
 }

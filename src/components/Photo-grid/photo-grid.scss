@@ -1,12 +1,13 @@
 .photo-grid {
-  margin: 100px auto 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template: auto/repeat(auto-fill, 284px);
+  gap: 20px;
+  justify-content: center;
 }
 
 .photo-grid__item {
-  width: calc((100% - 16px*3)/4);
+  width: 100%;
+  margin: 0;
   object-fit: cover;
   object-position: center;
-  margin: 0 16px 16px 0;
 }

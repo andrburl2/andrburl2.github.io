@@ -1,12 +1,9 @@
 .header {
-  width: calc(100% - 200px);
   height: 60px;
-  margin: 0 auto;
   padding: 10px 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
 }
 
 .header__logo {
@@ -17,7 +14,6 @@
 
 .header__langs {
   display: flex;
-  align-items: center;  
 }
 
 .header__button {
@@ -26,11 +22,11 @@
   border: 1px solid #fff;
   border-radius: 10px;
   background: transparent;
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 1;
   color: #fff;
   outline: none;
-  transition: 1s ease;
+  transition: .8s ease;
   cursor: pointer;
 
   &:last-of-type {
@@ -40,5 +36,17 @@
   &:hover {
     background-color: #fff;
     color: #000;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__button {
+    padding: 5px;
+    margin: 0 10px 0 0;
+    font-size: 2rem;
+  }
+
+  .header__logo {
+    margin: 0 10px 0 0;
   }
 }

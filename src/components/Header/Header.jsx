@@ -5,7 +5,7 @@ import logo from '../../images/logo.svg';
 
 function Header() {
   return (
-    <header className='header'>
+    <header className='header section'>
       <img className='header__logo' src={logo} alt='Логотип карта Россия' />
 
       <div className='header__langs'>
