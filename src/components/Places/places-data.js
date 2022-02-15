@@ -18,8 +18,8 @@ const PLACES_DATA = [
   },
   {
     title: 'Кольский',
-    link: 'https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy',
-    linkText: 'National Geographic',
+    link: 'https://onetwotrip.com/ru/blog/russian-federation/kola-peninsula-accessible-arctic-region',
+    linkText: 'onetwotrip.com',
     image: kolskiy,
     alt: 'Гора на Кольском полуострове',
     text: [
@@ -29,8 +29,8 @@ const PLACES_DATA = [
   },
   {
     title: 'Алтай',
-    link: 'https://www.facebook.com/vera.bashmakova/posts/10156011613718822',
-    linkText: 'Facebook',
+    link: 'https://www.tripadvisor.ru/Attractions-g1833666-Activities-Republic_of_Altai_Siberian_District.html',
+    linkText: 'tripadvisor.ru',
     image: altay,
     alt: 'Алтайский лес',
     text: [
@@ -41,7 +41,7 @@ const PLACES_DATA = [
   {
     title: 'Зимний Байкал',
     link: 'https://vk.com/baikalmile',
-    linkText: 'https://vk.com/baikalmile',
+    linkText: 'Байкальская Миля',
     image: baikal,
     alt: 'Замерзший Байкал',
     text: [
@@ -52,7 +52,7 @@ const PLACES_DATA = [
   {
     title: 'Карелия',
     link: 'http://vodlozero.ru',
-    linkText: 'http://vodlozero.ru',
+    linkText: 'vodlozero.ru',
     image: karelia,
     alt: 'Водлозеро',
     text: [

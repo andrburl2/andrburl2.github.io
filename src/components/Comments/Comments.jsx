@@ -6,9 +6,9 @@ import CommentsItem from './CommentsItem';
 
 function Comments() {
   return (
-    <section className='comments'>
-      <h2 className='content-title'>Фотографы, снимающие Россию</h2>
-      <p className='content-subtitle'>Природа и люди вдохновили их работы, удостоенные наград на международных конкурсах</p>
+    <section className='comments section'>
+      <h2 className='section__title'>Фотографы, снимающие Россию</h2>
+      <p className='section__subtitle'>Природа и люди вдохновили их работы, удостоенные наград на международных конкурсах</p>
 
       <div className='comments__container'>
         {

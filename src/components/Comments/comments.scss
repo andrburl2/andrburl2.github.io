@@ -1,56 +1,63 @@
 .comments {
-    width: 100%;
-    margin: 100px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .comments__container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: grid;
+  grid-template: auto/repeat(3, 1fr);
+  gap: 20px;
 }
 
 .comments__item {
-    max-width: 382px;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .comments__image {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
+  margin: 0 0 30px;
 }
 
 .comments__quote {
-    max-width: 100%;
-    margin: 42px 0 24px;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-}
-
-@media screen and (max-width: 768px) {
-    .comments__quote {
-        order: 2;
-        font-size: 16px;
-        line-height: 23px;
-        margin: 0;
-    }
+  margin: 0 0 20px;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .comments__quote-author {
-    width: 100%;
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 24px;
-    margin: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 @media screen and (max-width: 768px) {
-    .comments__quote-author {
-        order: 1;
-        font-size: 14px;
-        line-height: 22px;
-        text-align: center;
-        margin: 0 0 24px;
-    }
+  .comments__container {
+    grid-template: auto/auto;
+    justify-content: center;
+  }
+
+  .comments__item {
+    max-width: 500px;
+    align-items: center;
+  }
+
+  .comments__image {
+    margin: 0 0 10px;
+  }
+
+  .comments__quote {
+    order: 2;
+    margin: 0;
+  }
+
+  .comments__quote-author {
+    margin: 0 0 15px;
+    order: 1;
+    text-align: center;
+  }
 }

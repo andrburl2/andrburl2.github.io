@@ -4,11 +4,11 @@ function PlaceItem(props) {
   const { card } = props; 
 
   return (
-    <div className='place'>
+    <div className='place__item'>
       <h3 className='place__title'>{card.title}</h3>
 
       <div className='place__website'>
-        <p className='place__website-url-heading'>URL</p>
+        <p className='place__website-heading'>URL</p>
         <a className='place__website-url' href={card.link} target='_blank' rel='noreferrer'>{card.linkText}</a>
       </div>
 
