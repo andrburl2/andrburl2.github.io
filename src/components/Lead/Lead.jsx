@@ -3,15 +3,19 @@ import './lead.scss';
 
 import topShelf from '../../images/top_shelf.jpg';
 
+import { TranslationContext } from '../../context/translation';
+
 function Lead() {
+  const translation = React.useContext(TranslationContext).lead;
+
   return (
     <section className='lead section'>
-      <h1 className='lead__title'>Путешествия по России</h1>
-      <p className='lead__subtitle'>Настоящая страна не в выпусках новостей, а здесь</p>
+      <h1 className='lead__title'>{translation.title}</h1>
+      <p className='lead__subtitle'>{translation.subtitle}</p>
 
       <figure className='lead__figure'>
-        <img className='lead__figure-image' src={topShelf} alt='Спящий перед окном в поезде человек' />
-        <figcaption className='lead__figure-caption'>ваша полка — верхняя</figcaption>
+        <img className='lead__figure-image' src={topShelf} alt={translation.imgAlt} />
+        <figcaption className='lead__figure-caption'>{translation.figcaption}</figcaption>
       </figure>
     </section>
   )

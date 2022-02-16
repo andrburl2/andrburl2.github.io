@@ -12,54 +12,18 @@ import item_11 from '../../images/grid-photo/item11.jpg';
 import item_12 from '../../images/grid-photo/item12.jpg';
 
 const PHOTO_GRID_DATA = [
-  {
-    image: item_1,
-    alt: 'Окно поезда',
-  },
-  {
-    image: item_2,
-    alt: 'Снежные вершины в облаках',
-  },
-  {
-    image: item_3,
-    alt: 'Собака на стогу сена в поле',
-  },
-  {
-    image: item_4,
-    alt: 'Туманный лес',
-  },
-  {
-    image: item_5,
-    alt: 'Голубой лед',
-  },
-  {
-    image: item_6,
-    alt: 'Песчаный пляж',
-  },
-  {
-    image: item_7,
-    alt: 'Горные вершины',
-  },
-  {
-    image: item_8,
-    alt: 'Знак пешеходного перехода',
-  },
-  {
-    image: item_9,
-    alt: 'Горы в тумане',
-  },
-  {
-    image: item_10,
-    alt: 'Равнина с гора вдалеке',
-  },
-  {
-    image: item_11,
-    alt: 'Горы с морем',
-  },
-  {
-    image: item_12,
-    alt: 'Зеленые горы, укутанные облаками',
-  },
+  item_1,
+  item_2,
+  item_3,
+  item_4,
+  item_5,
+  item_6,
+  item_7,
+  item_8,
+  item_9,
+  item_10,
+  item_11,
+  item_12,
 ];
 
 export { PHOTO_GRID_DATA };

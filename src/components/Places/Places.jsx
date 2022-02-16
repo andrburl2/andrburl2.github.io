@@ -1,14 +1,17 @@
 import React from 'react';
 import './places.scss';
-import { PLACES_DATA } from './places-data';
+
+import { TranslationContext } from '../../context/translation';
 
 import PlaceItem from './PlaceItem';
 
 function Places() {
+  const translation = React.useContext(TranslationContext).places;
+
   return (
     <section className='places section'>
       {
-        PLACES_DATA.map((el, index) => {
+        translation.map((el, index) => {
           return <PlaceItem card={el} key={index} />
         })
       }

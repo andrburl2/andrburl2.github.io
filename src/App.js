@@ -4,13 +4,21 @@ import Header from './components/Header/Header';
 import Main from './components/Main/Main'
 import Footer from './components/Footer/Footer';
 
+import { TranslationContext, translations } from './context/translation';
+
 function App() {
+  const [lang, setLang] = React.useState('ru');
+
+  const switchLang = (lang) => {
+    setLang(lang)
+  }
+
   return (
-    <>
-      <Header />
+    <TranslationContext.Provider value={translations[lang]}>
+      <Header switchLang={switchLang} />
       <Main />
       <Footer />
-    </>
+    </TranslationContext.Provider>
   );
 }
 

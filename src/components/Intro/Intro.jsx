@@ -1,26 +1,18 @@
 import React from 'react';
 import './intro.scss';
 
+import { TranslationContext } from '../../context/translation';
+
 function Intro() {
+  const translation = React.useContext(TranslationContext).intro;
+
   return (
     <section className='intro section'>
-      <h2 className='intro__title'>Чего мы там не видели?</h2>
+      <h2 className='intro__title'>{translation.title}</h2>
 
-      <p className='intro__text'>
-        По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют провести отпуск в родной стране.
-        Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая вселенная с ласковым морем юга, густыми лесами Саян и суровыми льдами плато Путорана.
-        А ещё увидеть все эти красоты можно без миллионов на счету, загранпаспорта и многочасовых перелетов.
-        Как, например, Вера Башмакова — смелая молодая мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров по родной стране.
-        Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.
-      </p>
+      <p className='intro__text'>{translation.text}</p>
 
-      <p className='intro__statistics'>
-        Часовых поясов 11<br/>
-        Объектов природного наследия ЮНЕСКО 12<br/>
-        Объектов культурного наследия ЮНЕСКО 16<br/>
-        Природных заповедников 105<br/>
-        Аэропортов 241
-      </p>
+      <p className='intro__statistics'>{translation.statistics}</p>
     </section>
   )
 }
