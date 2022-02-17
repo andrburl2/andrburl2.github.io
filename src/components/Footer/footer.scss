@@ -1,0 +1,101 @@
+.footer {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.footer__links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;  
+}
+
+.footer__link-item {
+  margin: 0 25px 0 0;
+
+  &:last-of-type {
+    margin: 0;
+  }
+}
+
+.footer__link {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+
+  &::after, &::before {
+    content: '';
+    width: calc(100% + 10px);  // прибавляем к 100% сумму толщины границы и позиционирования
+    height: calc(100% + 10px); // например: border(3px) + top/left(7px) = 10px
+    position: absolute;
+    transition: .6s ease;
+  }
+
+  &::before {
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    top: -7px;
+    left: -7px;
+  }
+
+  &::after {
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    bottom: -7px;
+    right: -7px;
+  }
+
+  &:hover::before, &:hover::after {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.footer__copyright {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer__links {
+    margin: 0 0 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 40px;
+  }
+
+  .footer__links {
+    max-width: 320px;
+    gap: 30px;
+    flex-wrap: wrap;    
+    justify-content: center;
+  }
+
+  .footer__link-item {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer__links {
+    flex-direction: column;
+    align-items: center;
+  }
+}

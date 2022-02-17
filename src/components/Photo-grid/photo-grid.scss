@@ -1,0 +1,19 @@
+.photo-grid {
+  display: grid;
+  grid-template: auto/repeat(auto-fill, 284px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.photo-grid__item {
+  width: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 320px) {
+  .photo-grid {
+    grid-template: auto/auto;
+  }
+}

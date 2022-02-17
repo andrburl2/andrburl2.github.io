@@ -1,0 +1,44 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__title {
+  margin: 0 0 30px;
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 7rem;
+}
+
+.intro__text {
+  max-width: 800px;
+  margin: 0 0 25px;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+}
+
+.intro__statistics {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  white-space: pre-line;
+}
+
+@media screen and (max-width: 768px) {
+  .intro__title {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    text-align: center;
+  }
+
+  .intro__text {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .intro__statistics {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
