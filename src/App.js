@@ -15,7 +15,7 @@ function App() {
 
   return (
     <TranslationContext.Provider value={translations[lang]}>
-      <Header switchLang={switchLang} />
+      <Header switchLang={switchLang} selectedLang={lang} />
       <Main />
       <Footer />
     </TranslationContext.Provider>

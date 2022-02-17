@@ -1,32 +1,26 @@
 import React from 'react';
 import './footer.scss';
 
+import { TranslationContext } from '../../context/translation';
+
 function Footer() {
+  const translation = React.useContext(TranslationContext).footer;
+
   return (
     <footer className='footer section'>
       <ul className='footer__links'>
-        <li className='footer__link-item'>
-          <a className='footer__link' href='https://yandex.ru/maps' target='_blank' rel='noreferrer' title='Яндекс карты'>Карты</a>
-        </li>
-
-        <li className='footer__link-item'>
-          <a className='footer__link' href='https://yandex.ru/pogoda' target='_blank' rel='noreferrer' title='Яндекс погода'>Погода</a>
-        </li>
-
-        <li className='footer__link-item'>
-          <a className='footer__link' href='https://rasp.yandex.ru' target='_blank' rel='noreferrer' title='Яндекс Расписания'>Расписание</a>
-        </li>
-
-        <li className='footer__link-item'>
-          <a className='footer__link' href='https://calendar.yandex.ru' target='_blank' rel='noreferrer' title='Яндекс Календарь'>Календарь</a>
-        </li>
-
-        <li className='footer__link-item'>
-          <a className='footer__link' href='https://travel.yandex.ru' target='_blank' rel='noreferrer' title='Яндекс Путешествия'>Путешествия</a>
-        </li>
+        {
+          translation.links.map((el, index) => {
+            return (
+              <li className='footer__link-item' key={index}>
+                <a className='footer__link' href={el.link} target='_blank' rel='noreferrer' title={el.title}>{el.text}</a>
+              </li>
+            )
+          })
+        }
       </ul>
-      
-      <p className='footer__copyright'>&copy; 2022. Бурлаков Андрей</p>
+
+      <p className='footer__copyright'>&copy; 2022. {translation.copyright}</p>
     </footer>
   )
 }

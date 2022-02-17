@@ -32,10 +32,10 @@
 
   &::after, &::before {
     content: '';
-    width: calc(100% + 10px);
-    height: calc(100% + 10px);
+    width: calc(100% + 10px);  // прибавляем к 100% сумму толщины границы и позиционирования
+    height: calc(100% + 10px); // например: border(3px) + top/left(7px) = 10px
     position: absolute;
-    transition: width .7s ease, height .7s ease, opacity .7s ease;
+    transition: .6s ease;
   }
 
   &::before {

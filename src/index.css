@@ -10,13 +10,6 @@ html {
   color: #fff;
 }
 
-.content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .section {
   width: calc(100% - 200px);
   margin: 0 auto 50px;

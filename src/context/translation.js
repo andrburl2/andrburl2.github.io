@@ -1,6 +1,9 @@
 import React from 'react';
 
-import { PLACES_DATA_RU, PLACES_DATA_EN} from '../components/Places/places-data';
+import { PLACES_DATA_RU, PLACES_DATA_EN } from '../components/Places/places-data';
+import kamchatka from '../images/video/kamchatka.jpg';
+import observatory from '../images/video/observatory.jpg';
+import { COMMENTS_DATA_RU, COMMENTS_DATA_EN } from '../components/Comments/comment-data';
 
 export const TranslationContext = React.createContext();
 
@@ -42,6 +45,70 @@ export const translations = {
       'Зеленые горы, укутанные облаками',
     ],
     places: PLACES_DATA_RU,
+    video: {
+      title: 'В глубины Земли и в дальний космос',
+      subtitle: 'Видео от студии Stereotactic о местах в России, где ведутся фундаментальные исследования',
+      videos: [
+        {
+          link: 'https://vimeo.com/81106671',
+          linkTitle: 'vimeo.com/colors-of-Kamchatka',
+          duration: '6:30',
+          title: 'Colors of Kamchatka',
+          subtitle: 'Режиссер: Павел Карыхалин',
+          img: kamchatka,
+          imgAlt: 'Берег Камчатки',
+        },
+        {
+          link: 'https://vimeo.com/290675450',
+          linkTitle: 'vimeo.com/observatory',
+          duration: '24:45',
+          title: 'Обсерватория | Observatory',
+          subtitle: 'Режиссер: Александр Худоконь',
+          img: observatory,
+          imgAlt: 'Обсерватория под ночным небом',
+        },
+      ]
+    },
+    comments: {
+      title: 'Фотографы, снимающие Россию',
+      subtitle: 'Природа и люди вдохновили их работы, удостоенные наград на международных конкурсах',
+      commentsItems: COMMENTS_DATA_RU,
+    },
+    cover: {
+      linkTitle: 'На электричках до Байкала',
+      title: 'До Байкала «на собаках»',
+      subtitle: 'По мотивам учебной темы о Транссибе и iframes — путешествие от столицы до Байкала на электричках.',
+    },
+    footer: {
+      links: [
+        {
+          link: 'https://yandex.ru/maps',
+          text: 'Карты',
+          title: 'Яндекс карты',
+        },
+        {
+          link: 'https://yandex.ru/pogoda',
+          text: 'Погода',
+          title: 'Яндекс Погода',
+        },
+        {
+          link: 'https://rasp.yandex.ru',
+          text: 'Расписания',
+          title: 'Яндекс Расписания',
+        },
+        {
+          link: 'https://calendar.yandex.ru',
+          text: 'Календарь',
+          title: 'Яндекс Календарь',
+        },
+        {
+          link: 'https://travel.yandex.ru',
+          text: 'Путешествия',
+          title: 'Яндекс Путешествия',
+        },
+      ],
+      copyright: 'Бурлаков Андрей'
+    }
   },
   en: {
     lead: {
@@ -80,5 +147,69 @@ export const translations = {
       'Green mountains wrapped in clouds',
     ],
     places: PLACES_DATA_EN,
+    video: {
+      title: 'Into the depths of the Earth and into deep space',
+      subtitle: 'Video from Stereotactic studio about places in Russia where fundamental research is being conducted',
+      videos: [
+        {
+          link: 'https://vimeo.com/81106671',
+          linkTitle: 'vimeo.com/colors-of-Kamchatka',
+          duration: '6:30',
+          title: 'Colors of Kamchatka',
+          subtitle: 'Director: Pavel Karykhalin',
+          img: kamchatka,
+          imgAlt: 'Kamchatka Coast',
+        },
+        {
+          link: 'https://vimeo.com/290675450',
+          linkTitle: 'vimeo.com/observatory',
+          duration: '24:45',
+          title: 'Обсерватория | Observatory',
+          subtitle: 'Director: Alexander Khudokon',
+          img: observatory,
+          imgAlt: 'Observatory under the night sky',
+        },
+      ]
+    },
+    comments: {
+      title: 'Photographers taking pictures of Russia',
+      subtitle: 'Nature and people inspired their award-winning works at international competitions',
+      commentsItems: COMMENTS_DATA_EN,
+    },
+    cover: {
+      linkTitle: 'By train to Lake Baikal',
+      title: 'To Baikal by train',
+      subtitle: 'Based on the educational topic about the Trans-Siberian Railway and iframes - a journey from Moscow to Lake Baikal by train.',
+    },
+    footer: {
+      links: [
+        {
+          link: 'https://yandex.ru/maps',
+          text: 'Maps',
+          title: 'Yandex Maps',
+        },
+        {
+          link: 'https://yandex.ru/pogoda',
+          text: 'Weather',
+          title: 'Yandex Weather',
+        },
+        {
+          link: 'https://rasp.yandex.ru',
+          text: 'Schedules',
+          title: 'Yandex Schedules',
+        },
+        {
+          link: 'https://calendar.yandex.ru',
+          text: 'Calendar',
+          title: 'Yandex Calendar',
+        },
+        {
+          link: 'https://travel.yandex.ru',
+          text: 'Travel',
+          title: 'Yandex Travel',
+        },
+      ],
+      copyright: 'Burlakov Andrey'
+    }
   },
 };
