@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/travels/static/css/main.91d9c7cd.css",
+    "main.js": "/travels/static/js/main.24fb6a39.js",
+    "static/media/baikal.jpg": "/travels/static/media/baikal.4a03b871af7562bc02ff.jpg",
+    "static/media/observatory.jpg": "/travels/static/media/observatory.9108b38fc741f6a4c872.jpg",
+    "static/media/cover-bg.jpg": "/travels/static/media/cover-bg.03edfe6f0b7cc7b5db1f.jpg",
+    "static/media/top_shelf.jpg": "/travels/static/media/top_shelf.f32d1e2814f2f46ae0e9.jpg",
+    "static/media/Inter-Bold.woff": "/travels/static/media/Inter-Bold.ac56fedcfb71f361e640.woff",
+    "static/media/Inter-Medium.woff": "/travels/static/media/Inter-Medium.85d486611d473e948737.woff",
+    "static/media/Inter-Black.woff": "/travels/static/media/Inter-Black.693e6be6ae3827878c23.woff",
+    "static/media/kamchatka.jpg": "/travels/static/media/kamchatka.71bad0b415798e0bd024.jpg",
+    "static/media/Inter-Bold.woff2": "/travels/static/media/Inter-Bold.608bcc79718d3a9c1107.woff2",
+    "static/media/Inter-Medium.woff2": "/travels/static/media/Inter-Medium.1adb92f91ae8cb45da68.woff2",
+    "static/media/Inter-Black.woff2": "/travels/static/media/Inter-Black.1d6c0b9e5c52db5e33c9.woff2",
+    "static/media/kolskiy.jpg": "/travels/static/media/kolskiy.1f585f18a799339fb621.jpg",
+    "static/media/kurhskay_kosa.jpg": "/travels/static/media/kurhskay_kosa.4df5d8d0475b0b1ef84d.jpg",
+    "static/media/altay.jpg": "/travels/static/media/altay.2885a85b6660588595e1.jpg",
+    "static/media/karelia.jpg": "/travels/static/media/karelia.e758347f6cd0aafe527c.jpg",
+    "static/media/item2.jpg": "/travels/static/media/item2.557807beef55af1ac581.jpg",
+    "static/media/item10.jpg": "/travels/static/media/item10.b0b7d3070bb71b46aebc.jpg",
+    "static/media/item11.jpg": "/travels/static/media/item11.7197212f9e3414b09f75.jpg",
+    "static/media/item5.jpg": "/travels/static/media/item5.302ad925fb0e4a3bd2d3.jpg",
+    "static/media/item7.jpg": "/travels/static/media/item7.f3b6fb69233d555e9fc5.jpg",
+    "static/media/item9.jpg": "/travels/static/media/item9.bb1aa3f674b798841aae.jpg",
+    "static/media/item6.jpg": "/travels/static/media/item6.2106874f709d60f384ca.jpg",
+    "static/media/item1.jpg": "/travels/static/media/item1.80900d721f21259cf205.jpg",
+    "static/media/item4.jpg": "/travels/static/media/item4.ed94d2817496ef71a793.jpg",
+    "static/media/item3.jpg": "/travels/static/media/item3.e448c35aef03664f21e3.jpg",
+    "static/media/item8.jpg": "/travels/static/media/item8.ff40645ab310ab629a59.jpg",
+    "static/media/item12.jpg": "/travels/static/media/item12.3e5745fb4da54edac457.jpg",
+    "static/media/logo.svg": "/travels/static/media/logo.e71aeeb196dbba34757a1cacc51f30d9.svg",
+    "index.html": "/travels/index.html",
+    "main.91d9c7cd.css.map": "/travels/static/css/main.91d9c7cd.css.map",
+    "main.24fb6a39.js.map": "/travels/static/js/main.24fb6a39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91d9c7cd.css",
+    "static/js/main.24fb6a39.js"
+  ]
+}
